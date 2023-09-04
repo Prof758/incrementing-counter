@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Mono&display=swap');
 
 * {
   box-sizing: border-box;
@@ -6,23 +6,38 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  color: #113f67;
+  font-family: 'Roboto Mono', sans-serif;
+  color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
   overflow: hidden;
-  background-color: #e7eaf6;
+  background-color: #8e44ad;
+}
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 86px;
+  text-align: center;
 }
 
-.navbar {
-  background-color: #113f67;
-  color: #e7eaf6;
+.counter-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 30px 50px;
+}
+
+.counter {
+  font-size: 60px;
+  margin-top: 10px;
 }
 
 .container {
+  color: #113f67;
   background-color: #bbe4e9;
   padding: 46px;
   border-radius: 8px;
@@ -47,4 +62,10 @@ h2 {
 .contact i {
   font-size: 36px;
   font-weight: bold;
+}
+
+@media (max-width: 580px) {
+  section {
+    flex-direction: column;
+  }
 }
